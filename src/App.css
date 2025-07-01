@@ -1,0 +1,128 @@
+/* App.css */
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1; /* Light background */
+  color: #3b3b3b; /* Dark gray for text */
+}
+
+/* Main container */
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  background-color: #fef9f0; /* Light beige background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #8d6e63; /* Muddy brown */
+  margin-bottom: 25px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  flex-grow: 1;
+}
+
+label {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #6d4c41; /* Darker brown */
+}
+
+input {
+  width: 60px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #d7ccc8; /* Pale brownish border */
+  border-radius: 5px;
+  background-color: #e7d9c4; /* Muddy light brown */
+  color: #3e2723; /* Dark brown text */
+}
+
+/* Button Styles */
+button {
+  padding: 8px 16px; /* Uniform padding for all buttons */
+  background-color: #8d6e63; /* Muddy brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 120px; /* Set a fixed width to make sure both buttons are the same size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+button:hover {
+  background-color: #6f4f39; /* Darker brown when hovered */
+}
+
+button .tick {
+  position: absolute;
+  color: #76c7c0; /* Light green color for the tick mark */
+  font-size: 18px;
+  visibility: hidden; /* Initially hidden */
+}
+
+button.show-tick .tick {
+  visibility: visible; /* Show the tick when 'copied' state is true */
+}
+
+/* Textarea for generated text */
+.generated-text {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  font-size: 15px;
+  background-color: #f5f0e1; /* Very light yellowish background */
+  border: 1px solid #d7ccc8; /* Pale border to match theme */
+  border-radius: 5px;
+  resize: none;
+  color: #3e2723; /* Dark brown text */
+  text-align: justify; /* Justified text */
+}
+
+textarea::placeholder {
+  color: #8d6e63; /* Placeholder text in muddy brown */
+}
+
+/* Tooltip style */
+button[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
