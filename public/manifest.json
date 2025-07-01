@@ -2,19 +2,21 @@
   "manifest_version": 3,
   "name": "Lorem Ipsum Generator",
   "version": "1.0",
-  "description": "Generate Lorem Ipsum text with ease.",
+  "description": "A simple Lorem Ipsum text generator.",
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "icons/icon-16.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
     }
   },
   "permissions": [
     "clipboardWrite"
   ],
-  "background": {
-    "service_worker": "background.js"
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
   }
 }
