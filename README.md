@@ -17,7 +17,7 @@ Before you start, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/lorem-ipsum-chrome-extension.git
+  git clone https://github.com/Kaustubh-trivedi/lorem-ipsum-generator-chrome-extension.git
     ```
 
 2. Navigate to the project directory:
